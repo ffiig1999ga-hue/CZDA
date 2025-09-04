@@ -125,7 +125,7 @@ export function ResultCard({ name, grade, category, rank }: ResultCardProps) {
                     : "bg-secondary text-secondary-foreground border-secondary/40"
                 )}
               >
-                {category ? `الترتيب ${rank} في فئة ${getCategoryName(category)}` : `الترتيب ${rank}`}
+                الترتيب {rank} {category ? `في فئة ${getCategoryName(category)}` : ''}
               </Badge>
             </div>
           )}
