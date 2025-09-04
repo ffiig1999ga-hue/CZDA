@@ -134,17 +134,6 @@ export function SearchSection() {
               <p className="text-sm text-muted-foreground mb-3">
                 تأكد من كتابة الاسم الأول والثاني بشكل صحيح
               </p>
-              <p className="text-sm text-muted-foreground">
-                إذا كنت غير راضٍ عن النتيجة أو تحتاج مساعدة: 
-                <a 
-                  href="https://wa.me/201559181558" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-green-600 hover:text-green-700 font-semibold ml-1"
-                >
-                  واتساب +201559181558
-                </a>
-              </p>
             </div>
           </CardContent>
         </Card>
@@ -179,17 +168,6 @@ export function SearchSection() {
               </p>
               <p className="text-sm text-muted-foreground mt-2">
                 🎯 معايير النجاح: من 85 درجة فما فوق
-              </p>
-              <p className="text-xs text-muted-foreground mt-3">
-                للمساعدة أو الاستفسار أو إذا كنت غير راضٍ عن النتيجة: 
-                <a 
-                  href="https://wa.me/201559181558" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-green-600 hover:text-green-700 font-semibold ml-1"
-                >
-                  واتساب +201559181558
-                </a>
               </p>
             </div>
           </CardContent>

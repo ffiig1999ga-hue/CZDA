@@ -86,23 +86,6 @@ export function ResultCard({ name, grade, category, rank }: ResultCardProps) {
           </div>
         </div>
         
-        {/* عرض الترتيب فوق الاسم */}
-        {rank && category && (
-          <div className="mb-4">
-            <Badge 
-              variant="outline" 
-              className={cn(
-                "text-lg font-bold px-4 py-2 border-2",
-                rank <= 3 
-                  ? "bg-gradient-golden text-accent-foreground border-accent/40 golden-glow" 
-                  : "bg-gradient-islamic text-primary-foreground border-primary/40 glow-effect"
-              )}
-            >
-              الترتيب {rank} في فئة {getCategoryName(category)}
-            </Badge>
-          </div>
-        )}
-        
         <CardTitle className="text-xl font-bold mb-2 text-foreground">
           {name}
         </CardTitle>
@@ -129,7 +112,7 @@ export function ResultCard({ name, grade, category, rank }: ResultCardProps) {
             </Badge>
           )}
           
-          {rank && category && (
+          {rank && (
             <div className="mt-3">
               <Badge 
                 variant="outline" 
@@ -142,7 +125,7 @@ export function ResultCard({ name, grade, category, rank }: ResultCardProps) {
                     : "bg-secondary text-secondary-foreground border-secondary/40"
                 )}
               >
-                الترتيب {rank} في فئة {getCategoryName(category)}
+                {category ? `الترتيب ${rank} في فئة ${getCategoryName(category)}` : `الترتيب ${rank}`}
               </Badge>
             </div>
           )}
